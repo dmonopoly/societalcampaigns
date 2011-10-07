@@ -1,14 +1,53 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Societalcampaigns</title>
+  <title>Societal Campaigns</title>
+
+	<!--Blueprint stylesheets-->
+	<%= stylesheet_link_tag 'blueprint/screen', :media => "screen, projection" %>
+  <%= stylesheet_link_tag 'blueprint/print', :media => "print" %>
+	<!--[if IE]><%= stylesheet_link_tag 'blueprint/ie', :media => 'screen, projection' %><![endif]-->
+
   <%= stylesheet_link_tag    "application" %>
   <%= javascript_include_tag "application" %>
   <%= csrf_meta_tags %>
+
+	<meta name="description" content="A collection of ideas for society." />
+  <meta name="keywords" content="society, societal, campaigns, change, world, people, person, better, life" />
 </head>
 <body>
 
-<%= yield %>
+	<div id="header">
+		
+		<div id="inner_header" class="container">
+			<div id="left_area" class="span-22">
+				<div id="logo_area" class="span-6">
+					<%= link_to "societal campaigns", '/', class: "big" %>
+				</div>
+				<div id="top_left_controls" class="span-16 last">
+					<%= link_to "new campaign", new_campaign_path, class: "big" %>
+				</div>
+			</div>
+		
+			<div id="right_area" class="span-2 last">
+				<div id="top_right_controls">
+					<%= link_to "home", '/', class: "big" %>
+				</div>
+			</div>
+		</div><!--End inner header-->
+		
+	</div>
+	
+	<div id="central" class="container">
+		<%= yield %>
+	</div>
+
+	<div id="footer">
+		<div class="container">
+			&copy; 2011 Societal Campaigns
+		</div>
+	</div>
+
 
 </body>
 </html>

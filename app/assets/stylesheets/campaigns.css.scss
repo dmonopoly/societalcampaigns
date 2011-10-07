@@ -1,0 +1,25 @@
+@import "partials/variables";
+
+#campaign_new, #campaign_edit {
+  form {
+    div#title_area {
+    }
+    
+    div#description_area {      
+    }
+
+    div#buttons {
+      input#submit_campaign_button {
+      }
+    }
+  } // end form
+}
+
+#campaign_index {
+  div.title {
+    
+  }
+  div.description {
+    
+  }
+}

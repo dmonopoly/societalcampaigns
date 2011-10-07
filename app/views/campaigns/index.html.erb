@@ -1,0 +1,12 @@
+<!--campaigns/index-->
+<div id="campaign_index">
+	<% @campaigns.each do |campaign| %>
+		<div class="title">
+			<%= campaign.title %>
+		</div>
+		
+		<div class="description">
+			<%= campaign.description %>
+		</div>
+	<% end %>
+</div>

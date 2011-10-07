@@ -1,0 +1,19 @@
+<!--form for campaigns new and edit; requires 'campaign', 'button_name'-->
+<%= form_for campaign do |f| %>
+	<!--Title-->
+	<div id="title_area">
+		<%= f.label :title %><br>
+		<%= f.text_field :title %>
+	</div>
+
+	<!--Description-->
+	<div id="description_area">
+		<%= f.label :description %><br>
+		<%= f.text_area :description %>
+	</div>
+	
+	<!--Button Area-->
+	<div id="buttons">
+		<%= f.submit button_name, id: "submit_campaign_button" %>
+	</div>
+<% end %>
