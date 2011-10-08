@@ -1,6 +1,6 @@
 class CampaignsController < ApplicationController
   def index
-    @campaigns = Campaign.all
+    @popular_campaigns = Campaign.all.select { |c| c.popular? }
   end
   
   def new

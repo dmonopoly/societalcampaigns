@@ -1,12 +1,10 @@
 <!--campaigns/index-->
 <div id="campaign_index">
-	<% @campaigns.each do |campaign| %>
-		<div class="title">
-			<%= campaign.title %>
-		</div>
-		
-		<div class="description">
-			<%= campaign.description %>
+	<span class="popular">Popular Campaigns</span>
+	<% @popular_campaigns.each do |campaign| %>
+		<div class="campaign">
+			<%= render :partial => "campaigns/partials/campaign", :locals => { :campaign => campaign } %>
 		</div>
 	<% end %>
+	
 </div>
