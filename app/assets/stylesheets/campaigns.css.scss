@@ -1,5 +1,10 @@
 @import "partials/variables";
 
+div.up_count {
+  color: $green;
+  display: inline-block;
+}
+
 #campaign_new, #campaign_edit {
   form {
     div#title_area {

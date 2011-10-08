@@ -1,4 +1,5 @@
 <!--campaign partial; requires variable 'campaign'-->
 <div class="title">
+	<%= render :partial => "campaigns/partials/vote_form", :locals => { :campaign => campaign } %>
 	<%= link_to campaign.title, campaign %>
 </div>
