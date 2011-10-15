@@ -1,0 +1,24 @@
+// Place all the styles related to the static controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+@import "partials/variables";
+
+#static_index {
+  text-align: center;
+  div#title {
+    margin-top: 80px;
+    font-size: 30px;
+    color: $blue;
+  }
+  
+  #form {
+    #textfield {
+      width: 450px;
+      font-size: 30px;
+      text-align: center;
+    }
+    #button {
+      width: 50px;
+    }
+  }
+}
