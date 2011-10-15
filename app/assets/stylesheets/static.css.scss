@@ -5,13 +5,13 @@
 
 #static_index {
   text-align: center;
+  margin-top: 200px;
   div#title {
-    margin-top: 80px;
     font-size: 30px;
     color: $blue;
   }
   
-  #form {
+  #form { // form for proposal
     #textfield {
       width: 450px;
       font-size: 30px;
@@ -21,4 +21,6 @@
       width: 50px;
     }
   }
+  
+  
 }

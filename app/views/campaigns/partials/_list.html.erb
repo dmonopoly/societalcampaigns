@@ -1,0 +1,4 @@
+<!--list of campaign partials; requires variable 'campaigns'-->
+<% campaigns.each do |campaign| %>
+	<%= render :partial => "campaigns/partials/campaign", :locals => { :campaign => campaign } %>
+<% end %>

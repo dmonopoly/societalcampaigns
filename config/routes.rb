@@ -1,7 +1,9 @@
 Societalcampaigns::Application.routes.draw do
   
+  match 'propose' => 'static#propose'
+  match 'live_search' => 'static#live_search'
   match 'browse' => 'campaigns#index'
-  match 'search' => 'static#search'
+  
   resources :campaigns
   
   root :to => 'static#index'

@@ -2,8 +2,12 @@
 <div id="static_index">
 	<div id="title">What do you want to change in the world?</div>
 
-	<%= form_tag("/search", :method=>:get, :id=>'form') do %>
+	<%= form_tag("/propose", :method=>:get, :id=>'form') do %>
 		<%= text_field_tag 'textfield' %><br>
 		<%= submit_tag "Go", :id=>'button' %>
 	<% end %>
+	
+	<div id="results">
+		
+	</div>
 </div>
