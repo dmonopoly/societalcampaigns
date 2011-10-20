@@ -1,6 +1,6 @@
 jQuery ->
   # Triggers
-	$("#static_index").click ->
+	$("#form").click ->
 		$("#title").toggle('slow')
 
 	# Proposal code

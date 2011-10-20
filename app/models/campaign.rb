@@ -4,13 +4,10 @@ class Campaign < ActiveRecord::Base
     true
   end
   
-  def self.contains string
+  def self.contains string # change to self.all_that_contain
     arr = Campaign.select { |c|
       c.title.include? string
     }
-    puts '------------------'
-    puts "campaigns found: #{arr.inspect}"
-    puts '------------------'
     arr
   end
 end

@@ -1,4 +1,4 @@
 jQuery ->
 	# Triggers
-	$("#header").click ->
-		$("#inner_header").toggle('slow')
+  # $("#header").click ->
+    # $("#inner_header").toggle('slow')
