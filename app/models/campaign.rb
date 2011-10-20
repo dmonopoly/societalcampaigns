@@ -1,4 +1,5 @@
 class Campaign < ActiveRecord::Base
+  default_scope :order => 'up_count DESC'
   
   def popular?
     true

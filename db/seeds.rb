@@ -25,8 +25,8 @@
 
 ## Create the campaigns
 if Campaign.count == 0
-    5.times do |n|
-      Factory.create(:campaign)
+    20.times do |n|
+      Factory.create(:campaign, :up_count => rand(1000))
     end
     
     puts "---created campaigns"

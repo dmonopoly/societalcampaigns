@@ -3,14 +3,30 @@
 div.up_count {
   color: $green;
   display: inline-block;
+  padding: 10px;
+  font-size: 20px;
+  a.vote_button {
+    font-size: 15px;
+    color: $pleasant_gray;
+  	&:hover {
+      color: blue;
+  	}
+  }
 }
 
 #campaign_new, #campaign_edit {
   form {
+    text-align: center;
     div#title_area {
+      input#title_form {
+        font-size: 20px;
+      }
     }
     
-    div#description_area {      
+    div#description_area {
+      #description_form {
+        font-size: 18px;
+      }
     }
 
     div#buttons {

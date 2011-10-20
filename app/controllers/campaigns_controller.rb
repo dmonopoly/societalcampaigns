@@ -42,5 +42,13 @@ class CampaignsController < ApplicationController
     end
   end
   
-  
+  # requires campaign_id to be set
+  def up
+    @campaign = Campaign.find(params[:campaign_id])
+    new_count = @campaign.up_count + 1
+    
+    Campaign.update(@campaign.id, { :up_count => new_count })
+    
+    redirect_to @campaign
+  end
 end

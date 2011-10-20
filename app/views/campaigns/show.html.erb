@@ -1,5 +1,9 @@
 <!--campaigns/show-->
 <div id="campaign_show">
+	<div class="right">
+		<%= render :partial => "campaigns/partials/vote_form", :locals => { :campaign => @campaign } %>
+	</div>
+	
 	<div id="title">
 		<%= @campaign.title %>
 	</div>

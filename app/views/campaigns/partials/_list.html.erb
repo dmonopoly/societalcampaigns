@@ -1,4 +1,8 @@
 <!--list of campaign partials; requires variable 'campaigns'-->
+<ul>
 <% campaigns.each do |campaign| %>
-	<%= render :partial => "campaigns/partials/campaign", :locals => { :campaign => campaign } %>
+	<li class="no_bullet">
+		<%= render :partial => "campaigns/partials/campaign", :locals => { :campaign => campaign } %>
+	</li>
 <% end %>
+</ul>
