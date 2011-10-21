@@ -12,6 +12,18 @@
 		<%= f.text_area :description, id: "description_form" %>
 	</div>
 	
+	<!--Links-->
+	<div id="link_area">
+		<%= f.label :link, "Links" %><br>
+		<ul>
+		<%= f.fields_for :occurrences do |builder| %>
+			<li class="no_bullet no_left_padding">
+				<%= builder.text_field :link %>
+			</li>
+		<% end %>
+		</ul>
+	</div>
+	
 	<!--Button Area-->
 	<div id="buttons">
 		<%= f.submit button_name, id: "submit_campaign_button" %>

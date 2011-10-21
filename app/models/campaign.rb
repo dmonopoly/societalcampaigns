@@ -1,4 +1,6 @@
 class Campaign < ActiveRecord::Base
+  has_many :links
+  
   default_scope :order => 'up_count DESC'
   
   def popular?
