@@ -3,7 +3,7 @@
 	<div id="title">What do you want to change in the world?</div>
 
 	<%= form_tag("/propose", :method=>:get, :id=>'form') do %>
-		<%= text_field_tag 'textfield' %><br>
+		<%= text_field_tag 'textfield', nil, :autocomplete=>"off" %><br>
 		<%= submit_tag "Go", :id=>'button' %>
 	<% end %>
 	
